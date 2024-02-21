@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SAO Status Window</title>
+</head>
+<body>
+    <div class="status-window">
+        <div class="avatar" id="avatar-container">
+            <!-- Add an image for the avatar -->
+            <img id="avatar-image" src="default-avatar.png" alt="Your Avatar">
+            <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+            <button id="change-avatar-btn">Change Avatar</button>
+        </div>
+        <div class="status-info">
+            <h2 id="player-name">Player Name</h2>
+            <div class="status-bar">
+                <div class="health-bar" style="width: 100%;"></div>
+                <div class="health-label">100%</div>
+            </div>
+            <p>Level: <span id="level">10</span></p>
+            <p>Health: <span id="health">100/100</span></p>
+            <p>Mana: <span id="mana">50/100</span></p>
+            <p>Experience: <span id="experience">800/1000</span></p>
+        </div>
+        <div class="attributes">
+            <h3>Attributes</h3>
+            <!-- Attribute Section with buttons -->
+            <div class="attribute-section">
+                <p>Strength: <span id="strength">1</span></p>
+                <button class="increase-attribute-btn" data-attribute="strength">+</button>
+            </div>
+            <div class="attribute-section">
+                <p>Agility: <span id="agility">1</span></p>
+                <button class="increase-attribute-btn" data-attribute="agility">+</button>
+            </div>
+            <div class="attribute-section">
+                <p>Sense: <span id="sense">1</span></p>
+                <button class="increase-attribute-btn" data-attribute="sense">+</button>
+            </div>
+            <div class="attribute-section">
+                <p>Vitality: <span id="vitality">30</span></p>
+                <button class="increase-attribute-btn" data-attribute="vitality">+</button>
+            </div>
+            <div class="attribute-section">
+                <p>IQ: <span id="iq">5</span></p>
+                <button class="increase-attribute-btn" data-attribute="iq">+</button>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Sword Mastery - SSS</li>
+                <li>Heal - C</li>
+            </ul>
+        </div>
+        <div class="attribute-points">
+            <h2>Attribute Points: <span id="attribute-points">5</span></h2>
+        </div>
+        <div id="update-name-section">
+            <input type="text" id="player-name-input" placeholder="Enter Player Name">
+            <button id="update-name-btn">Update Name</button>
+        </div>
+        <button id="level-up-btn">Level Up</button>
+    </div>
+    <script src="mech.js"></script>
+</body>
+</html>

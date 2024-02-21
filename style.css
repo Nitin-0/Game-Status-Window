@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.status-window {
+    background-color: #1e1e1e;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 400px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom styles for the avatar section */
+#avatar-container {
+    position: relative;
+}
+
+#avatar-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+#avatar-input {
+    display: none;
+}
+
+#change-avatar-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.status-info {
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.status-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.health-bar {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.health-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 20px;
+    color: #fff;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Additional Styles for Different Sections */
+.attributes,
+.skills,
+.quests,
+.inventory,
+.companions {
+    color: #ddd;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Style for the status window header */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
